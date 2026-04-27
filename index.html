@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>WebCraft Technologies | Premium Website Development Nigeria</title>
+  <meta name="description" content="WebCraft Technologies builds premium, conversion-focused websites for Nigerian businesses."/>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"/>
+  <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+
+  <!-- LOADER -->
+  <div id="loader">
+    <div class="ld-inner">
+      <div class="ld-logo">W<span>C</span></div>
+      <p>WebCraft Technologies</p>
+      <div class="ld-track"><div class="ld-bar"></div></div>
+    </div>
+  </div>
+
+  <!-- NAV -->
+  <nav id="nav">
+    <div class="container nav-wrap">
+      <a href="#home" class="logo">WebCraft<span>Technologies</span></a>
+      <ul class="nav-list">
+        <li><a href="#home"      class="nl active">Home</a></li>
+        <li><a href="#portfolio" class="nl">Portfolio</a></li>
+        <li><a href="#packages"  class="nl">Packages</a></li>
+        <li><a href="#reviews"   class="nl">Reviews</a></li>
+        <li><a href="#contact"   class="nl">Contact</a></li>
+      </ul>
+      <a href="https://wa.me/2349068759598?text=Hello%2C%20I%20want%20to%20build%20a%20website." target="_blank" class="nav-wa">
+        <i class="fab fa-whatsapp"></i> Get Started
+      </a>
+      <button class="burger" id="burger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="drawer" id="drawer">
+      <ul>
+        <li><a href="#home"      onclick="closeDrawer()">Home</a></li>
+        <li><a href="#portfolio" onclick="closeDrawer()">Portfolio</a></li>
+        <li><a href="#packages"  onclick="closeDrawer()">Packages</a></li>
+        <li><a href="#reviews"   onclick="closeDrawer()">Reviews</a></li>
+        <li><a href="#contact"   onclick="closeDrawer()">Contact</a></li>
+      </ul>
+      <a href="https://wa.me/2349068759598" target="_blank" class="drawer-wa">
+        <i class="fab fa-whatsapp"></i> Chat on WhatsApp
+      </a>
+    </div>
+  </nav>
+
+  <!-- ═══ HERO ═══ -->
+  <section id="home" class="hero">
+    <div class="hero-grid-lines"></div>
+    <div class="hero-glow g1"></div>
+    <div class="hero-glow g2"></div>
+    <div class="container hero-body">
+      <div class="hero-eyebrow" data-a>
+        <span class="dot"></span> Nigeria's #1 Premium Web Studio
+      </div>
+      <h1 data-a data-d="100">
+        We Build Websites<br/>
+        That <em>Convert</em><br/>
+        Visitors to Clients
+      </h1>
+      <p class="hero-p" data-a data-d="250">
+        High-converting, beautifully designed websites for Nigerian businesses —
+        with live previews before you pay a single kobo.
+      </p>
+      <div class="hero-actions" data-a data-d="400">
+        <button onclick="goTo('#portfolio')" class="btn btn-blue">
+          See Live Previews <i class="fas fa-arrow-right"></i>
+        </button>
+        <button onclick="bookNow()" class="btn btn-glass">
+          Start My Website <i class="fas fa-rocket"></i>
+        </button>
+      </div>
+      <div class="hero-pills" data-a data-d="550">
+        <span><i class="fas fa-bolt"></i> Fast Delivery</span>
+        <span><i class="fas fa-mobile-alt"></i> Mobile-First</span>
+        <span><i class="fas fa-shield-alt"></i> 100% Satisfaction</span>
+        <span><i class="fas fa-headset"></i> 24/7 Support</span>
+      </div>
+    </div>
+
+    <!-- Hero image strip -->
+    <div class="hero-strip" data-a data-d="300">
+      <div class="strip-track">
+        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=320&q=80" alt="web"/>
+        <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=320&q=80" alt="ecommerce"/>
+        <img src="https://images.unsplash.com/photo-1509391366360-2e959784a276?w=320&q=80" alt="solar"/>
+        <img src="https://images.unsplash.com/photo-1438232992991-995b671e5695?w=320&q=80" alt="church"/>
+        <img src="https://images.unsplash.com/photo-1621605815971-fbc98d665033?w=320&q=80" alt="barber"/>
+        <img src="https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=320&q=80" alt="hospital"/>
+        <!-- duplicate for seamless loop -->
+        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=320&q=80" alt="web"/>
+        <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=320&q=80" alt="ecommerce"/>
+        <img src="https://images.unsplash.com/photo-1509391366360-2e959784a276?w=320&q=80" alt="solar"/>
+        <img src="https://images.unsplash.com/photo-1438232992991-995b671e5695?w=320&q=80" alt="church"/>
+      </div>
+    </div>
+
+    <div class="scroll-cue">
+      <div class="sc-line"></div><span>Scroll</span>
+    </div>
+  </section>
+
+  <!-- ═══ STATS ═══ -->
+  <section class="stats-bar">
+    <div class="container stats-grid">
+      <div class="stat" data-a>
+        <h3><span class="cnt" data-t="120">0</span>+</h3>
+        <p>Happy Clients</p>
+      </div>
+      <div class="stat" data-a data-d="80">
+        <h3><span class="cnt" data-t="150">0</span>+</h3>
+        <p>Projects Delivered</p>
+      </div>
+      <div class="stat" data-a data-d="160">
+        <h3>4.9 <i class="fas fa-star"></i></h3>
+        <p>Average Rating</p>
+      </div>
+      <div class="stat" data-a data-d="240">
+        <h3><span class="cnt" data-t="3">0</span> yrs</h3>
+        <p>Industry Experience</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ PORTFOLIO ═══ -->
+  <section id="portfolio" class="portfolio">
+    <div class="container">
+      <div class="sec-head" data-a>
+        <span class="chip">Our Work</span>
+        <h2>Live Website Previews</h2>
+        <p>Click any card to see 5 real screenshots of what we'll build for you — before you commit.</p>
+      </div>
+
+      <!-- 3 FEATURED CARDS -->
+      <div class="feat-grid">
+
+        <div class="feat-card" onclick="showPreview('ecommerce')" tabindex="0" role="button" data-a>
+          <div class="fc-img">
+            <img
+              src="images/ecommerce-showcase-1.jpg"
+              alt="E-commerce Website"
+              onerror="this.src='https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=700&q=85'"/>
+            <div class="fc-hover">
+              <div class="fc-hover-btn"><i class="fas fa-eye"></i> View Preview</div>
+            </div>
+            <div class="fc-ribbon">Most Popular</div>
+          </div>
+          <div class="fc-body">
+            <span class="fc-cat"><i class="fas fa-shopping-cart"></i> E-commerce</span>
+            <h3>E-commerce Store</h3>
+            <p>Full shopping experience with product catalogue, cart, secure checkout &amp; order tracking.</p>
+            <div class="fc-tags">
+              <span>Shopping Cart</span><span>Payment Gateway</span><span>Inventory Panel</span>
+            </div>
+            <button onclick="event.stopPropagation();bookPackage('E-commerce Website')" class="btn btn-blue btn-sm">
+              I Want This <i class="fas fa-arrow-right"></i>
+            </button>
+          </div>
+        </div>
+
+        <div class="feat-card" onclick="showPreview('church')" tabindex="0" role="button" data-a data-d="120">
+          <div class="fc-img">
+            <img
+              src="images/church-showcase-1.jpg"
+              alt="Church Website"
+              onerror="this.src='https://images.unsplash.com/photo-1438232992991-995b671e5695?w=700&q=85'"/>
+            <div class="fc-hover">
+              <div class="fc-hover-btn"><i class="fas fa-eye"></i> View Preview</div>
+            </div>
+          </div>
+          <div class="fc-body">
+            <span class="fc-cat"><i class="fas fa-church"></i> Ministry</span>
+            <h3>Church Website</h3>
+            <p>Sermons, events calendar, online giving, live stream integration &amp; member portal.</p>
+            <div class="fc-tags">
+              <span>Sermon Archive</span><span>Online Giving</span><span>Event Calendar</span>
+            </div>
+            <button onclick="event.stopPropagation();bookPackage('Church Website')" class="btn btn-blue btn-sm">
+              I Want This <i class="fas fa-arrow-right"></i>
+            </button>
+          </div>
+        </div>
+
+        <div class="feat-card" onclick="showPreview('solar')" tabindex="0" role="button" data-a data-d="240">
+          <div class="fc-img">
+            <img
+              src="images/solar-showcase-1.jpg"
+              alt="Solar Company"
+              onerror="this.src='https://images.unsplash.com/photo-1509391366360-2e959784a276?w=700&q=85'"/>
+            <div class="fc-hover">
+              <div class="fc-hover-btn"><i class="fas fa-eye"></i> View Preview</div>
+            </div>
+          </div>
+          <div class="fc-body">
+            <span class="fc-cat"><i class="fas fa-solar-panel"></i> Energy</span>
+            <h3>Solar Energy Company</h3>
+            <p>Showcase panels, request quotes, book installations &amp; educate customers online.</p>
+            <div class="fc-tags">
+              <span>Quote Calculator</span><span>Project Gallery</span><span>Lead Capture</span>
+            </div>
+            <button onclick="event.stopPropagation();bookPackage('Solar Company Website')" class="btn btn-blue btn-sm">
+              I Want This <i class="fas fa-arrow-right"></i>
+            </button>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- MORE INDUSTRIES — smaller cards, NO coming soon -->
+      <div class="more-head" data-a>
+        <span class="chip">More Industries</span>
+      </div>
+      <div class="more-grid">
+
+        <div class="more-card" onclick="bookPackage('Barber / Salon Website')" tabindex="0" role="button" data-a>
+          <img
+            src="images/barber-business.jpg"
+            alt="Barber"
+            onerror="this.src='https://images.unsplash.com/photo-1621605815971-fbc98d665033?w=400&q=80'"/>
+          <div class="mc-overlay">
+            <h4>Barber / Salon</h4>
+            <p>Booking &amp; Portfolio</p>
+            <span class="mc-btn">Get This Site</span>
+          </div>
+        </div>
+
+        <div class="more-card" onclick="bookPackage('Hospital / Clinic Website')" tabindex="0" role="button" data-a data-d="60">
+          <img
+            src="images/hospital-web.jpg"
+            alt="Hospital"
+            onerror="this.src='https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=400&q=80'"/>
+          <div class="mc-overlay">
+            <h4>Hospital / Clinic</h4>
+            <p>Appointments &amp; Patient Portal</p>
+            <span class="mc-btn">Get This Site</span>
+          </div>
+        </div>
+
+        <div class="more-card" onclick="bookPackage('Real Estate Website')" tabindex="0" role="button" data-a data-d="120">
+          <img
+            src="images/realestate-web.jpg"
+            alt="Real Estate"
+            onerror="this.src='https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=400&q=80'"/>
+          <div class="mc-overlay">
+            <h4>Real Estate</h4>
+            <p>Listings &amp; Agents</p>
+            <span class="mc-btn">Get This Site</span>
+          </div>
+        </div>
+
+        <div class="more-card" onclick="bookPackage('Restaurant Website')" tabindex="0" role="button" data-a data-d="180">
+          <img
+            src="images/restaurant-web.jpg"
+            alt="Restaurant"
+            onerror="this.src='https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=400&q=80'"/>
+          <div class="mc-overlay">
+            <h4>Restaurant</h4>
+            <p>Menu &amp; Reservations</p>
+            <span class="mc-btn">Get This Site</span>
+          </div>
+        </div>
+
+        <div class="more-card" onclick="bookPackage('School / Academy Website')" tabindex="0" role="button" data-a data-d="240">
+          <img
+            src="images/school-web.jpg"
+            alt="School"
+            onerror="this.src='https://images.unsplash.com/photo-1580582932707-520aed937b7b?w=400&q=80'"/>
+          <div class="mc-overlay">
+            <h4>School / Academy</h4>
+            <p>Admissions &amp; Portal</p>
+            <span class="mc-btn">Get This Site</span>
+          </div>
+        </div>
+
+        <div class="more-card more-any" onclick="bookNow()" tabindex="0" role="button" data-a data-d="300">
+          <img
+            src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=400&q=80"
+            alt="Any Business"/>
+          <div class="mc-overlay">
+            <h4>Your Industry</h4>
+            <p>We build for any business</p>
+            <span class="mc-btn">Let's Talk</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ PROCESS ═══ -->
+  <section class="process">
+    <div class="container">
+      <div class="sec-head" data-a>
+        <span class="chip">How It Works</span>
+        <h2>From Idea to Live in Days</h2>
+        <p>A simple, transparent 4-step process. No surprises, no delays.</p>
+      </div>
+      <div class="proc-row">
+        <div class="proc-card" data-a>
+          <div class="pc-num">01</div>
+          <div class="pc-icon"><i class="fas fa-comments"></i></div>
+          <h4>Consultation</h4>
+          <p>We discuss your goals &amp; business needs via WhatsApp or call.</p>
+        </div>
+        <div class="pc-arrow"><i class="fas fa-chevron-right"></i></div>
+        <div class="proc-card" data-a data-d="100">
+          <div class="pc-num">02</div>
+          <div class="pc-icon"><i class="fas fa-pencil-ruler"></i></div>
+          <h4>Design &amp; Build</h4>
+          <p>We design with your brand colours, logo &amp; content.</p>
+        </div>
+        <div class="pc-arrow"><i class="fas fa-chevron-right"></i></div>
+        <div class="proc-card" data-a data-d="200">
+          <div class="pc-num">03</div>
+          <div class="pc-icon"><i class="fas fa-eye"></i></div>
+          <h4>Review</h4>
+          <p>You review and we revise until you're 100% satisfied.</p>
+        </div>
+        <div class="pc-arrow"><i class="fas fa-chevron-right"></i></div>
+        <div class="proc-card" data-a data-d="300">
+          <div class="pc-num">04</div>
+          <div class="pc-icon"><i class="fas fa-rocket"></i></div>
+          <h4>Launch</h4>
+          <p>Your site goes live with hosting, domain &amp; deployment.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ PACKAGES ═══ -->
+  <section id="packages" class="packages">
+    <div class="container">
+      <div class="sec-head" data-a>
+        <span class="chip">Pricing</span>
+        <h2>Choose Your Package</h2>
+        <p>Every package includes mobile responsiveness, SEO setup &amp; free revisions.</p>
+      </div>
+      <div class="pkg-grid">
+
+        <div class="pkg-card" data-a>
+          <div class="pkg-top">
+            <div class="pkg-icon"><i class="fas fa-file-alt"></i></div>
+            <h3>Landing Page</h3>
+            <p>For one product or service</p>
+          </div>
+          <div class="pkg-price"><em>₦</em>15,000</div>
+          <ul class="pkg-feats">
+            <li><i class="fas fa-check"></i> 1-Page Design</li>
+            <li><i class="fas fa-check"></i> Mobile Responsive</li>
+            <li><i class="fas fa-check"></i> Contact Form</li>
+            <li><i class="fas fa-check"></i> WhatsApp Button</li>
+            <li><i class="fas fa-check"></i> 2 Revisions</li>
+            <li class="na"><i class="fas fa-times"></i> CMS Panel</li>
+            <li class="na"><i class="fas fa-times"></i> Domain Setup</li>
+          </ul>
+          <button onclick="bookPackage('Landing Page – ₦15,000')" class="btn btn-outline">Select</button>
+        </div>
+
+        <div class="pkg-card" data-a data-d="100">
+          <div class="pkg-top">
+            <div class="pkg-icon"><i class="fas fa-briefcase"></i></div>
+            <h3>Business Website</h3>
+            <p>For growing SMEs &amp; startups</p>
+          </div>
+          <div class="pkg-price"><em>₦</em>80,000</div>
+          <ul class="pkg-feats">
+            <li><i class="fas fa-check"></i> Up to 5 Pages</li>
+            <li><i class="fas fa-check"></i> Mobile Responsive</li>
+            <li><i class="fas fa-check"></i> Contact &amp; Enquiry Forms</li>
+            <li><i class="fas fa-check"></i> Google Maps</li>
+            <li><i class="fas fa-check"></i> Basic SEO</li>
+            <li><i class="fas fa-check"></i> 5 Revisions</li>
+            <li class="na"><i class="fas fa-times"></i> E-commerce</li>
+          </ul>
+          <button onclick="bookPackage('Business Website – ₦80,000')" class="btn btn-outline">Select</button>
+        </div>
+
+        <div class="pkg-card pkg-featured" data-a data-d="200">
+          <div class="pkg-badge">Best Value</div>
+          <div class="pkg-top">
+            <div class="pkg-icon"><i class="fas fa-chart-line"></i></div>
+            <h3>Growth Package</h3>
+            <p>For scale, leads &amp; conversions</p>
+          </div>
+          <div class="pkg-price"><em>₦</em>150,000</div>
+          <ul class="pkg-feats">
+            <li><i class="fas fa-check"></i> Up to 10 Pages</li>
+            <li><i class="fas fa-check"></i> CMS / Admin Panel</li>
+            <li><i class="fas fa-check"></i> Blog / News Section</li>
+            <li><i class="fas fa-check"></i> Advanced SEO</li>
+            <li><i class="fas fa-check"></i> Social Media Integration</li>
+            <li><i class="fas fa-check"></i> Domain + Hosting</li>
+            <li><i class="fas fa-check"></i> Unlimited Revisions</li>
+          </ul>
+          <button onclick="bookPackage('Growth Package – ₦150,000')" class="btn btn-blue">Select</button>
+        </div>
+
+        <div class="pkg-card" data-a data-d="300">
+          <div class="pkg-top">
+            <div class="pkg-icon"><i class="fas fa-crown"></i></div>
+            <h3>Premium Package</h3>
+            <p>Full-featured for serious businesses</p>
+          </div>
+          <div class="pkg-price"><em>₦</em>250,000</div>
+          <ul class="pkg-feats">
+            <li><i class="fas fa-check"></i> Unlimited Pages</li>
+            <li><i class="fas fa-check"></i> E-commerce / Payments</li>
+            <li><i class="fas fa-check"></i> Custom Web App</li>
+            <li><i class="fas fa-check"></i> Performance Optimised</li>
+            <li><i class="fas fa-check"></i> 3 Months Free Support</li>
+            <li><i class="fas fa-check"></i> Google Analytics</li>
+            <li><i class="fas fa-check"></i> Priority Delivery</li>
+          </ul>
+          <button onclick="bookPackage('Premium Package – ₦250,000')" class="btn btn-outline">Select</button>
+        </div>
+
+      </div>
+      <div class="pkg-note" data-a>
+        <i class="fas fa-info-circle"></i>
+        All prices in Naira. Custom quotes available for complex projects.
+        <a href="https://wa.me/2349068759598" target="_blank">Chat with us</a> for a free consultation.
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ REVIEWS ═══ -->
+  <section id="reviews" class="reviews">
+    <div class="container">
+      <div class="sec-head" data-a>
+        <span class="chip">Testimonials</span>
+        <h2>What Our Clients Say</h2>
+        <p>Real feedback from real Nigerian businesses we've helped grow online.</p>
+      </div>
+
+      <div class="rev-grid">
+        <div class="rev-card" data-a>
+          <div class="rev-stars">★★★★★</div>
+          <p>"WebCraft delivered my e-commerce store in just 5 days. Sales have increased by 40% since launch. Absolutely worth every naira!"</p>
+          <div class="rev-foot">
+            <div class="rev-av">AO</div>
+            <div>
+              <strong>Adaeze Okonkwo</strong>
+              <span>Fashion Store Owner, Lagos</span>
+            </div>
+          </div>
+        </div>
+        <div class="rev-card" data-a data-d="100">
+          <div class="rev-stars">★★★★★</div>
+          <p>"Our church website transformed how we reach members. Online giving is up and new visitors find us on Google. God bless WebCraft!"</p>
+          <div class="rev-foot">
+            <div class="rev-av">PE</div>
+            <div>
+              <strong>Pastor Emmanuel</strong>
+              <span>Senior Pastor, Abuja</span>
+            </div>
+          </div>
+        </div>
+        <div class="rev-card" data-a data-d="200">
+          <div class="rev-stars">★★★★★</div>
+          <p>"Professional team, fast communication. The website looks exactly like the preview. My solar business gets 10x more leads monthly."</p>
+          <div class="rev-foot">
+            <div class="rev-av">TI</div>
+            <div>
+              <strong>Tunde Ibrahim</strong>
+              <span>Solar Energy CEO, Port Harcourt</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="rev-img-wrap" data-a>
+        <img
+          src="images/reviews-section.jpg"
+          alt="Client Reviews Screenshot"
+          onerror="this.src='https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=1200&q=80'"/>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ FAQ ═══ -->
+  <section class="faq">
+    <div class="container">
+      <div class="sec-head" data-a>
+        <span class="chip">FAQs</span>
+        <h2>Common Questions</h2>
+      </div>
+      <div class="faq-list">
+        <div class="faq-item" data-a>
+          <button class="faq-q" onclick="toggleFaq(this)">How long does it take to build my website? <i class="fas fa-chevron-down"></i></button>
+          <div class="faq-a"><p>Most websites are delivered within 5–14 business days. Landing pages can be ready in as little as 48 hours.</p></div>
+        </div>
+        <div class="faq-item" data-a data-d="50">
+          <button class="faq-q" onclick="toggleFaq(this)">Do I need to provide content or images? <i class="fas fa-chevron-down"></i></button>
+          <div class="faq-a"><p>You can provide your own, or we can source premium stock images and write compelling copy at an additional fee.</p></div>
+        </div>
+        <div class="faq-item" data-a data-d="100">
+          <button class="faq-q" onclick="toggleFaq(this)">Will my website work on mobile phones? <i class="fas fa-chevron-down"></i></button>
+          <div class="faq-a"><p>Absolutely. Every website is 100% mobile-responsive and tested across Android and iPhone devices.</p></div>
+        </div>
+        <div class="faq-item" data-a data-d="150">
+          <button class="faq-q" onclick="toggleFaq(this)">What payment methods do you accept? <i class="fas fa-chevron-down"></i></button>
+          <div class="faq-a"><p>Bank transfer, Opay, Palmpay and all major Nigerian platforms. 50% deposit to begin, balance on delivery.</p></div>
+        </div>
+        <div class="faq-item" data-a data-d="200">
+          <button class="faq-q" onclick="toggleFaq(this)">Do you offer maintenance after launch? <i class="fas fa-chevron-down"></i></button>
+          <div class="faq-a"><p>Yes! Affordable monthly plans: content updates, security monitoring, backups &amp; priority support.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ CTA ═══ -->
+  <section class="cta">
+    <div class="cta-glow"></div>
+    <div class="container">
+      <div class="cta-inner" data-a>
+        <h2>Ready to Go Live?</h2>
+        <p>Join 120+ Nigerian businesses that trust WebCraft Technologies.<br/>Let's start building yours today — fast, professional, and affordable.</p>
+        <div class="cta-btns">
+          <a href="https://wa.me/2349068759598?text=Hello%2C%20I%20want%20to%20build%20a%20website." target="_blank" class="btn btn-blue btn-lg">
+            <i class="fab fa-whatsapp"></i> Chat on WhatsApp Now
+          </a>
+          <button onclick="goTo('#packages')" class="btn btn-glass btn-lg">View Packages</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ FOOTER ═══ -->
+  <footer id="contact" class="footer">
+    <div class="container">
+      <div class="foot-row">
+        <div class="foot-brand">
+          <div class="foot-logo">WebCraft<span>Technologies</span></div>
+          <p>Premium website development for Nigerian businesses. Fast, professional &amp; affordable.</p>
+          <div class="foot-social">
+            <a href="https://wa.me/2349068759598" target="_blank"><i class="fab fa-whatsapp"></i></a>
+            <a href="https://www.instagram.com/web.craft.builder" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.tiktok.com/@webcraft852" target="_blank"><i class="fab fa-tiktok"></i></a>
+            <a href="https://t.me/oche8968" target="_blank"><i class="fab fa-telegram"></i></a>
+            <a href="https://www.upwork.com/freelancers/~0140b66bb355248d04" target="_blank"><i class="fab fa-upwork"></i></a>
+            <a href="https://www.linkedin.com/in/samuel-kaduna-88038433b" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://x.com/webcraft_ng" target="_blank"><i class="fab fa-x-twitter"></i></a>
+          </div>
+        </div>
+        <div class="foot-col">
+          <h5>Quick Links</h5>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#packages">Packages</a></li>
+            <li><a href="#reviews">Reviews</a></li>
+          </ul>
+        </div>
+        <div class="foot-col">
+          <h5>Services</h5>
+          <ul>
+            <li><a href="#portfolio">E-commerce Websites</a></li>
+            <li><a href="#portfolio">Church Websites</a></li>
+            <li><a href="#portfolio">Solar Company Sites</a></li>
+            <li><a href="#portfolio">Business Websites</a></li>
+            <li><a href="#portfolio">Landing Pages</a></li>
+          </ul>
+        </div>
+        <div class="foot-col">
+          <h5>Contact</h5>
+          <ul>
+            <li><i class="fab fa-whatsapp"></i><a href="https://wa.me/2349068759598" target="_blank">+234 906 875 9598</a></li>
+            <li><i class="fas fa-map-marker-alt"></i><span>Lagos, Nigeria</span></li>
+            <li><i class="fab fa-instagram"></i><a href="https://www.instagram.com/web.craft.builder" target="_blank">@web.craft.builder</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="foot-bottom">
+        <p>© 2026 WebCraft Technologies. All Rights Reserved.</p>
+        <p>Built with <i class="fas fa-heart"></i> in Nigeria</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ✅ ONLY WHATSAPP — GLOWING GREEN FLOATING BUTTON -->
+  <a href="https://wa.me/2349068759598?text=Hello%2C%20I%20want%20to%20build%20a%20website." target="_blank" class="wa-float" title="Chat on WhatsApp" aria-label="Chat on WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+    <span class="wa-pulse"></span>
+  </a>
+
+  <!-- BACK TO TOP -->
+  <button class="btt" id="btt" onclick="window.scrollTo({top:0,behavior:'smooth'})" aria-label="Back to top">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <!-- PREVIEW MODAL -->
+  <div id="prevModal" class="modal" role="dialog" aria-modal="true">
+    <div class="mbg" onclick="closeModal()"></div>
+    <div class="mbox">
+      <button class="mx" onclick="closeModal()"><i class="fas fa-times"></i></button>
+      <h2 id="mT"></h2>
+      <p id="mD"></p>
+      <div id="mI" class="m-imgs"></div>
+      <div class="m-foot">
+        <button onclick="closeModal()" class="btn btn-outline">Close</button>
+        <button onclick="bookFromModal()" class="btn btn-blue"><i class="fas fa-rocket"></i> I Want This</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- BOOKING MODAL -->
+  <div id="bookModal" class="modal" role="dialog" aria-modal="true">
+    <div class="mbg" onclick="closeBooking()"></div>
+    <div class="mbox mbook">
+      <button class="mx" onclick="closeBooking()"><i class="fas fa-times"></i></button>
+      <div class="mbook-icon"><i class="fas fa-rocket"></i></div>
+      <h2>Let's Build Your Website!</h2>
+      <p>Selected: <strong id="sPkg"></strong></p>
+      <p class="mb-sub">Choose how to reach us:</p>
+      <div class="mbook-opts">
+        <a id="waLink" href="#" target="_blank" class="mbo">
+          <i class="fab fa-whatsapp"></i><strong>WhatsApp</strong><span>Chat directly</span>
+        </a>
+        <a href="https://t.me/oche8968" target="_blank" class="mbo">
+          <i class="fab fa-telegram"></i><strong>Telegram</strong><span>Message us</span>
+        </a>
+        <a href="https://www.instagram.com/web.craft.builder" target="_blank" class="mbo">
+          <i class="fab fa-instagram"></i><strong>Instagram</strong><span>DM us</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
